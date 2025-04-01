@@ -36,9 +36,9 @@ public class ReverseBits {
 	   */
 	 
 	  return ((long) precomputedReverse[(int) (x & BIT_MASK)] << (3 * MASK_SIZE) | //We will just immediately return the the bitwise or ( | ) value of each of the 4 16-bit partitions of the 64 bit long computed using the mask size and bit mask 
-              (long) precomputedReverse[(int) ((x >>> MASK_SIZE) & BIT_MASK)] << (2 * MASK_SIZE) |
-              (long) precomputedReverse[(int) ((x >>> (2 * MASK_SIZE)) & BIT_MASK)] << MASK_SIZE |
-              (long) precomputedReverse[(int) (x >>> (3 * MASK_SIZE))]);
+              	 (long) precomputedReverse[(int) ((x >>> MASK_SIZE) & BIT_MASK)] << (2 * MASK_SIZE) |
+              	 (long) precomputedReverse[(int) ((x >>> (2 * MASK_SIZE)) & BIT_MASK)] << MASK_SIZE |
+              	 (long) precomputedReverse[(int) (x >>> (3 * MASK_SIZE))]);
   }
 
   public static void main(String[] args) {
